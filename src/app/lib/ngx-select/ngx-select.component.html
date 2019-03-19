@@ -57,7 +57,7 @@
     <!-- live search an item from the list -->
     <input #input type="text" class="ngx-select__search form-control" [ngClass]="setFormControlSize()"
            *ngIf="checkInputVisibility()"
-           [tabindex]="multiple === false? -1: 0"
+           
            (keyup)="inputKeyUp(input.value, $event)"
            [disabled]="disabled"
            [placeholder]="optionsSelected.length? '': placeholder"
